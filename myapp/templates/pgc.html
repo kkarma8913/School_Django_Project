@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+<style>
+    .th {
+        text-align: center;
+        background-color: rgb(30, 30, 73);
+        color: aliceblue;
+    }
+
+
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    .r {
+        background-color: beige;
+        text-align: center;
+    }
+</style>
+
+<br>
+
+
+<table class="r">
+    <tr>
+        <th class="th" colspan="7">CATEGORY</th>
+    </tr>
+    <tr>
+        <th>playgroup</th>
+        {% for i in playgroup %}
+        <td>{{i}}</td>
+        {% endfor %}
+    </tr>
+    <tr>
+        <th>Nuresery</th>
+        {% for i in nursery %}
+        <td>{{i}}</td>
+        {% endfor %}
+    </tr>
+    <tr>
+        <th>KG1</th>
+        {% for i in kg1 %}
+        <td>{{i}}</td>
+        {% endfor %}
+    </tr>
+    <tr>
+        <th>KG2</th>
+        {% for i in kg2 %}
+        <td>{{i}}</td>
+        {% endfor %}
+    </tr>
+</table>
+<br><br>
+
+
+
+
+
+
+{% endblock body %}
+

@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+<div class="container">
+    <div class="row my-3">
+     <div style="background-color: aliceblue;" class="col-sm-6 offset-sm-3">
+      <h3>Login</h3>
+      <hr>
+      <form action="" method="post" novalidate class="shadow p-5">
+
+        {% if msge %}
+        <p class="alert alert-danger mb-5">{{msge}}</p>
+        {% endif %}
+
+        {% csrf_token %}
+        {% for fm in myform %}
+         <div class="form-group">
+         {{fm.label_tag}} {{fm}} <small class="text-danger">{{fm.errors}}</small> <br>
+         </div>
+        {% endfor %}
+    
+        <input type="submit" class="btn btn-primary mt-4" value="Login">
+        <br>
+        <div class="text-center text-primary fw-bold"><small>Project name <a href="{% url 'signup' %}" class="text-danger">Create an Account</a> </small></div>
+       </form>
+     </div>
+    </div>
+   </div>
+
+    
+{% endblock body %}
+
+
+
+
+    
+    

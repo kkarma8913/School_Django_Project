@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block body %}
+
+
+<head>
+    <style>
+        tr {
+            padding: 10px;
+
+        }
+
+        .a {
+            background-color: rgb(236, 209, 200);
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        .o {
+            width: 200px;
+            height: 100px;
+            background: rgb(236, 209, 200);
+            position: relative;
+            animation: mymove 10s infinite;
+        }
+
+        @keyframes mymove {
+            from {
+                left: 0px;
+            }
+
+            to {
+                left: 500px;
+            }
+        }
+
+        .tb {
+            border: 5px double black; 
+            width: 100%;
+
+        }
+        .hed{
+            color: aliceblue;
+            text-align: center;
+        }
+    </style>
+    <div style="text-align: center;">
+        <div style="text-align: center;" >
+        <img src="{% static 'img/nur.jpg' %}" height="25%" width="80%" >
+        </div>
+        
+
+    </div>
+    <h1 style="color: blue;" class="o">NURSERY COURSE</h1>
+</head>
+<table class="tb">
+    <tr class="hed">
+        <th  style="background-color: rgb(9, 2, 51); " colspan="4">Category</th>
+
+    </tr>
+    <tr class="a">
+        <td style="background-color: rgb(202, 212, 231);">Maths</td>
+        <td>nursery maths</td>
+        <td>Learn maths</td>
+        <td></td>
+    </tr>
+    <tr class="a">
+        <td style="background-color: rgb(202, 212, 231);">English</td>
+        <td>nursery English </td>
+        <td>Learn ABC</td>
+        <td>Phonics alphabet & its songs </td>
+
+    </tr>
+    <tr class="a">
+        <td style="background-color:  rgb(202, 212, 231);">Hindi</td>
+        <td>nursery Hindi</td>
+        <td>varn mala</td>
+        <td>hindi kavita</td>
+    </tr>
+    <tr class="a">
+        <td style="background-color:  rgb(202, 212, 231);">Fun Activities</td>
+        <td>Nursery activities</td>
+        <td>indoor games</td>
+        <td>outdoor games</td>
+    </tr>
+    <tr class="a">
+        <td style="background-color: rgb(202, 212, 231);">Rymes and Tales</td>
+        <td>english rhymes</td>
+        <td>Hindi rhymes</td>
+        <td></td>
+    </tr>
+
+</table>
+{% endblock body %}

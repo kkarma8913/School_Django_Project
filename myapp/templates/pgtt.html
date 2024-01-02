@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+<style>
+    .th {
+        text-align: center;
+        background-color: rgb(30, 30, 73);
+        color: aliceblue;
+    }
+
+
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    .r {
+        background-color: beige;
+        text-align: center;
+    }
+</style>
+
+<br>
+
+
+<table class="r">
+    <tr>
+        <th class="th" colspan="7">CATEGORY</th>
+    </tr>
+    <tr>
+        <th>Monday</th>
+        {% for i in Monday %}
+        <td>{{i}}</td>
+        {% endfor %}
+    </tr>
+    <tr>
+        <th>Tuesday</th>
+        {% for i in Tuesday %}
+        <td>{{i}}</td>
+        {% endfor %}
+    </tr>
+    <tr>
+        <th>Wednesday</th>
+        {% for i in Wednesday %}
+        <td>{{i}}</td>
+        {% endfor %}
+    </tr>
+    <tr>
+        <th>Thrusday</th>
+        {% for i in Thrusday %}
+        <td>{{i}}</td>
+        {% endfor %}
+    </tr>
+    <tr>
+      <th>Friday</th>
+      {% for i in Friday %}
+      <td>{{i}}</td>
+      {% endfor %}
+  </tr>
+</table>
+<br><br>
+
+
+
+
+
+
+{% endblock body %}

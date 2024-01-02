@@ -1,0 +1,518 @@
+ {% extends 'base.html' %}
+
+{% load static %}
+
+{% block body %}
+<head>
+    <style>
+     .d{
+      border: 2px;
+      color:rgb(1, 1, 26);
+     border-left-color: black;
+    
+     }
+      .co{
+        color: rgba(0, 0, 0, 0.993);
+       font-style:inherit;
+       background-color: rgb(238, 231, 218);
+        
+      }
+      .t{
+   
+        padding: 9px;
+       
+      }
+      .all{
+        background-color: rgba(190, 236, 233, 0.795);
+
+       }
+    
+
+
+      
+        table, th, td {
+  border:1px solid black;
+}
+    </style>
+    <h1 style="color: #38003d; ">PLAY GROUP TIME TABLE</h1>
+</head>
+<div class="t">
+<table  style="border: 1px solid rgba(63, 1, 1, 0.637);">
+    <tr class="d">
+        <th style="background-color: rgb(236, 208, 212);"></th>
+        <th style="background-color: rgb(236, 208, 212);" >Monday</th>
+        <th style="background-color: rgb(208, 211, 228);">Tuesday</th>
+        <th style="background-color: rgb(212, 235, 205);">Wednesday</th>
+        <th style="background-color: rgb(200, 232, 233);">Thrusday</th>
+        <th style="background-color: rgb(231, 215, 197);">Friday</th>
+        
+    </tr>
+    <tr class="co">
+      <td style="background-color: rgb(206, 206, 241);">9:00-9:20</td>
+      <td>Geeting/story time</td>
+      <td>Geeting/story time</td>
+      <td>Geeting/story time</td>
+      <td>Geeting/story time</td>
+      <td>Geeting/story time</td>
+     
+      
+    </tr>
+    <tr class="co">
+        <td style="background-color:rgb(245, 207, 207)">9:20-9:40</td>
+      <td>Dance&Song</td>
+      <td>Dance&Song</td>
+      <td>Dance&Song</td>
+      <td>Dance&Song</td>
+      <td>Dance&Song</td>
+     
+        
+    </tr>
+    <tr class="co">
+        <td style="background-color: rgb(206, 206, 241);">9:40-10:00</td>
+        <td>restroom/Wash hands</td>
+        <td>restroom/Wash hands</td>
+        <td>restroom/Wash hands</td>
+        <td>restroom/Wash hands</td>
+        <td>restroom/Wash hands</td>
+       
+    </tr>
+    <tr class="co">
+        <td style="background-color:rgb(245, 207, 207)">10:00-10:20</td>
+        <td>Snacks time</td>
+        <td>Snacks time</td>
+        <td>Snacks time</td>
+        <td>Snacks time</td>
+        <td>Snacks time</td>
+        
+    </tr>
+    <tr class="co">
+        <td  style="background-color: rgb(206, 206, 241);">10:20-10:40</td>
+      <td>Rhymes hindi/English</td>
+      <td>Rhymes hindi/English</td>
+      <td>Rhymes hindi/English</td>
+      <td>Rhymes hindi/English</td>
+      <td>Rhymes hindi/English</td>
+      
+    </tr>
+    
+    <tr class="co"> 
+        <td style="background-color:rgb(245, 207, 207)">10:40-11:00</td>
+      <td>Sports</td>
+      <td>Sports</td>
+      <td>Sports</td>
+      <td>Sports</td>
+      <td>Sports</td>
+      
+    </tr>
+    <tr class="co">
+        <td style="background-color: rgb(206, 206, 241);">11:00-11:20</td>
+      <td >Drawing</td>
+      <td >Drawing</td>
+      <td >Drawing</td>
+      <td >Drawing</td>
+      <td >Drawing</td>
+
+
+      
+
+      
+
+      
+    </tr>
+    <tr class="co">
+        <td style="background-color:rgb(245, 207, 207)">11:20-12:40</td>
+      <td>Lunch time</td>
+      <td>Lunch time</td>
+      <td>Lunch time</td>
+      <td>Lunch time</td>
+      <td>Lunch time</td>
+      
+    </tr>
+    <tr class="co">
+        <td  style="background-color: rgb(206, 206, 241);">12:40-12:00</td>
+        <td>learn with fun</td>
+        <td>learn with fun</td>
+        <td>learn with fun</td>
+        <td>learn with fun</td>
+        <td>learn with fun</td>
+        
+    </tr>
+    <tr class="co">
+        <td style="background-color:rgb(245, 207, 207)">12:00-1:20</td>
+      <td>Group game</td>
+      <td>Group game</td>
+      <td>Group game</td>
+      <td>Group game</td>
+      <td>Group game</td>
+
+      
+    </tr>
+    
+</table>
+</div>
+
+
+
+
+<h1 style="color: #38003d; " >NURSERY TIME TABLE</h1>
+<table  style="border: 1px solid black;">
+  <tr class="d">
+      <th style="background-color: beige;"></th>
+      <th style="background-color: rgb(187, 214, 125);">Monday</th>
+      <th style="background-color: rgb(250, 158, 127);">Tuesday</th>
+      <th style="background-color: rgb(175, 238, 224);">Wednesday</th>
+      <th style="background-color: rgb(169, 199, 245);">Thrusday</th>
+      <th style="background-color: rgb(238, 170, 187);">Friday</th>
+      
+  </tr>
+  <tr class="all">
+    <td style="background-color: rgb(178, 195, 226);">9:00-9:20</td>
+    <td>Geeting/story time</td>
+    <td>Geeting/story time</td>
+    <td>Geeting/story time</td>
+    <td>Geeting/story time</td>
+    <td>Geeting/story time</td>
+  </tr>
+  <tr class="all">
+    <td style="background-color: rgb(234, 248, 155);">9:20-9:40</td>
+    <td>Dance&Song</td>
+    <td>Dance&Song</td>
+    <td>Dance&Song</td>
+    <td>Dance&Song</td>
+    <td>Dance&Song</td>
+   
+      
+  </tr>
+  <tr class="all">
+      <td style="background-color: rgb(178, 195, 226);">9:40-10:00</td>
+      <td>restroom/Wash hands</td>
+        <td>restroom/Wash hands</td>
+        <td>restroom/Wash hands</td>
+        <td>restroom/Wash hands</td>
+        <td>restroom/Wash hands</td>
+     
+  </tr>
+  <tr class="all">
+      <td style="background-color:rgb(234, 248, 155)">10:00-10:20</td>
+      <td>work book Hindi/English</td>
+      <td>work book Hindi/English</td>
+      <td>work book Hindi/English</td>
+      <td>work book Hindi/English</td>
+      <td>work book Hindi/English</td>
+      
+  </tr>
+  <tr class="all">
+    <td style="background-color: rgb(178, 195, 226);">10:20-10:40</td>
+    <td>Art & Craft</td>
+    <td>Art & Craft</td>
+    <td>Art & Craft</td>
+     <td>Art & Craft</td>
+     <td>Art & Craft</td>
+
+  </tr>
+  
+  <tr class="all">
+    <td style="background-color:rgb(234, 248, 155)">10:40-11:00</td>
+    <td>Sports</td>
+      <td>Sports</td>
+      <td>Sports</td>
+      <td>Sports</td>
+      <td>Sports</td>
+  </tr>
+  <tr class="all"> 
+      <td style="background-color: rgb(178, 195, 226);">11:00-11:20</td>
+    <td>Maths</td>
+    <td>Maths</td>
+    <td>Maths</td>
+    <td>Maths</td>
+    <td>Maths</td>
+  </tr>
+  <tr class="all">
+      <td style="background-color: rgb(234, 248, 155)">11:20-12:40</td>
+    <td>Lunch time</td>
+    <td>Lunch time</td>
+    <td>Lunch time</td>
+    <td>Lunch time</td>
+    <td>Lunch time</td>
+    
+  </tr>
+  <tr class="all">
+      <td style="background-color: rgb(178, 195, 226);">12:40-1:00</td>
+      <td>learn with fun</td>
+      <td>learn with fun</td>
+      <td>learn with fun</td>
+      <td>learn with fun</td>
+      <td>learn with fun</td>
+      
+  </tr>
+  <tr class="all">
+      <td style="background-color:rgb(234, 248, 155);">1:00-1:20</td>
+    <td>Group game</td>
+    <td>Group game</td>
+    <td>Group game</td>
+    <td>Group game</td>
+    <td>Group game</td>
+
+    
+  </tr>
+</table>
+
+
+
+
+
+<head>
+  <style>
+    .ss{
+      background-color: cornsilk;
+    }
+  </style>
+</head>
+<h1 style="color: #38003d; ">K.G.I TIME TABLE</h1>
+<table  style="border: 1px solid black;">
+  <tr>
+      <th style="background-color: antiquewhite;"></th>
+      <th style="background-color: rgb(219, 165, 240);">Monday</th>
+      <th style="background-color: lightsteelblue;">Tuesday</th>
+      <th style="background-color: palegreen;">Wednesday</th>
+      <th style="background-color: rosybrown;">Thrusday</th>
+      <th style="background-color: rgb(255, 205, 205);">Friday</th>
+      
+  </tr>
+  <tr class="ss">
+    <td style="background-color:  rgb(219, 201, 243);">9:00-9:20</td>
+    <td>geeting\story time</td>
+    <td>geeting\story time</td>
+    <td>geeting\story time</td>
+    <td>geeting\story time</td>
+    <td>geeting\story time</td>
+    
+  </tr>
+  <tr class="ss">
+      <td style="background-color: darksalmon;">9:20-9:40</td>
+    <td>Dance&Song</td>
+    <td>Dance&Song</td>
+    <td>Dance&Song</td>
+    <td>Dance&Song</td>
+    <td>Dance&Song</td>
+   
+      
+  </tr>
+  <tr class="ss">
+      <td style="background-color:  rgb(219, 201, 243);">9:40-10:00</td>
+      <td>restroom\Wash hands</td>
+      <td>restroom\Wash hands</td>
+      <td>restroom\Wash hands</td>
+      <td>restroom\Wash hands</td>
+      <td>restroom\Wash hands</td>
+     
+  </tr>
+  <tr class="ss">
+      <td style="background-color: darksalmon;">10:00-10:20</td>
+      <td>Snacks time</td>
+      <td>Snacks time</td>
+      <td>Snacks time</td>
+      <td>Snacks time</td>
+      <td>Snacks time</td>
+      
+  </tr>
+  <tr class="ss">
+      <td style="background-color:  rgb(219, 201, 243);">10:20-10:40</td>
+    <td>Rhymes hindi\English</td>
+    <td>Rhymes hindi\English</td>
+    <td>Rhymes hindi\English</td>
+    <td>Rhymes hindi\English</td>
+    <td>Rhymes hindi\English</td>
+    
+  </tr>
+  
+  <tr class="ss">
+      <td style="background-color: darksalmon;">10:40-11:00</td>
+    <td>Literacy</td>
+    <td>Literacy</td>
+    <td>Literacy</td>
+    <td>Literacy</td>
+    <td>Literacy</td>
+    
+    
+    
+  </tr>
+  <tr class="ss">
+      <td style="background-color:  rgb(219, 201, 243);">11:00-11:20</td>
+    <td>Drawing</td>
+    <td>Drawing</td>
+    <td>Drawing</td>
+    <td>Drawing</td>
+    <td>Drawing</td>
+
+    
+
+    
+
+    
+  </tr>
+  <tr class="ss">
+      <td style="background-color: darksalmon;">11:20-11:40</td>
+    <td>Lunch time</td>
+    <td>Lunch time</td>
+    <td>Lunch time</td>
+    <td>Lunch time</td>
+    <td>Lunch time</td>
+    
+  </tr>
+  <tr class="ss">
+      <td style="background-color: rgb(219, 201, 243);">11:40-12:00</td>
+      <td>Maths</td>
+      <td>Maths</td>
+      <td>Maths</td>
+      <td>Maths</td>
+      <td>Maths</td>
+      
+      
+  </tr>
+  <tr class="ss">
+      <td style="background-color: darksalmon;">12:00-12:20</td>
+    <td>Hindi</td>
+    <td>Hindi</td>
+    <td>Hindi</td>
+    <td>Hindi</td>
+    <td>Hindi</td>
+
+    
+  </tr>
+  
+  
+  
+ 
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1 style="color: #38003d; ">K.G.II TIME TABLE</h1>
+<table  style="border: 1px solid black;">
+  <tr class="all">
+      <th></th>
+      <th style="background-color: rgb(248, 248, 153);">Monday</th>
+      <th  style="background-color: rgb(138, 231, 184);">Tuesday</th>
+      <th  style="background-color: rgb(223, 189, 127);">Wednesday</th>
+      <th  style="background-color: rgb(230, 119, 174);">Thrusday</th>
+      <th  style="background-color: rgb(207, 138, 247);">Friday</th>
+      
+  </tr>
+  <tr class="all">
+    <td style="background-color: thistle;">9:00-9:20</td>
+    <td>geeting\story time</td>
+    <td>geeting\story time</td>
+    <td>geeting\story time</td>
+    <td>geeting\story time</td>
+    <td>geeting\story time</td>
+    
+  </tr>
+  <tr class="all">
+      <td style="background-color: lightcyan;">9:20-9:40</td>
+    <td >Dance&Song</td>
+    <td>Dance&Song</td>
+    <td>Dance&Song</td>
+    <td>Dance&Song</td>
+    <td>Dance&Song</td>
+   
+      
+  </tr>
+  <tr class="all">
+      <td style="background-color: thistle;">9:40-10:00</td>
+      <td>restroom\Wash hands</td>
+      <td>restroom\Wash hands</td>
+      <td>restroom\Wash hands</td>
+      <td>restroom\Wash hands</td>
+      <td>restroom\Wash hands</td>
+     
+  </tr>
+  <tr class="all">
+      <td style="background-color: lightcyan;">10:00-10:20</td>
+      <td>Snaks time</td>
+      <td>Snaks time</td>
+      <td>Snaks time</td>
+      <td>Snaks time</td>
+      <td>Snaks time</td>
+      
+  </tr>
+  <tr class="all">
+      <td style="background-color: thistle;">10:20-10:40</td>
+    <td>Rhymes hindi\English</td>
+    <td>Rhymes hindi\English</td>
+    <td>Rhymes hindi\English</td>
+    <td>Rhymes hindi\English</td>
+    <td>Rhymes hindi\English</td>
+    
+  </tr>
+  
+  <tr class="all">
+      <td style="background-color: lightcyan;">10:40-11:00</td>
+    <td>Park\Sports</td>
+    <td>Park\Sports</td>
+    <td>Park\Sports</td>
+    <td>Park\Sports</td>
+    <td>Park\Sports</td>
+    
+  </tr>
+  <tr class="all">
+      <td style="background-color: thistle;">11:00-11:20</td>
+    <td>Story</td>
+    <td>Story</td>
+    <td>Story</td>
+    <td>Story</td>
+    <td>Story</td>
+    
+
+    
+
+    
+
+    
+  </tr>
+  <tr class="all">
+      <td style="background-color: lightcyan;">11:20-11:40</td>
+    <td>Lunch time</td>
+    <td>Lunch time</td>
+    <td>Lunch time</td>
+    <td>Lunch time</td>
+    <td>Lunch time</td>
+    
+  </tr>
+  <tr class="all">
+      <td style="background-color: thistle;">11:40-12:00</td>
+      <td>learn with fun</td>
+      <td>learn with fun</td>
+      <td>learn with fun</td>
+      <td>learn with fun</td>
+      <td>learn with fun</td>
+      
+  </tr>
+  <tr class="all">
+      <td style="background-color: lightcyan;">12:00-12:20</td>
+    <td>Group game</td>
+    <td>Group game</td>
+    <td>Group game</td>
+    <td>Group game</td>
+    <td>Group game</td>
+
+    
+  </tr>
+  
+  
+  
+ 
+</table>
+
+{% endblock body %} 

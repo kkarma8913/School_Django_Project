@@ -1,0 +1,176 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+<h3>Playgroup</h3>
+<table class="table table-stippted table-bordered border-dark">
+    <tr>
+        <td></td>
+        {% for i in data %}
+        <td>{{i.time}}</td>
+        {% endfor %} 
+    </tr>
+    <tr>
+        <td>Monday</td>
+        
+        {% for i in pl_mon %}
+        <td>{{i.content}}</td>
+        {% endfor %}
+            
+    </tr>
+    <tr>
+        <td>Thuesday</td>
+        {% for i in pl_tue %}
+        <td>{{i.content}}</td>
+        {% endfor %}
+    </tr>
+    <tr>
+        <td>Wednesday</td>
+        {% for i in pl_wed %}
+        <td>{{i.content}}</td>
+        {% endfor %}
+    </tr>
+    <tr>
+        <td>Thrusday</td>
+        {% for i in pl_thu %}
+        <td>{{i.content}}</td>
+        {% endfor %}
+    </tr>
+    <tr>
+        <td>Friday</td>
+        {% for i in pl_fri %}
+        <td>{{i.content}}</td>
+        {% endfor %}
+    </tr>
+</table><hr><br>
+
+<h3>Nursery</h3>
+<table class="table table-stippted table-bordered border-dark">
+    <tr>
+        <td></td>
+        {% for i in data %}
+        <td>{{i.time}}</td>
+        {% endfor %} 
+    </tr>
+    <tr>
+        <td>Monday</td>
+        
+        {% for i in nus_mon %}
+        <td>{{i.content}}</td>
+        {% endfor %}
+            
+    </tr>
+    <tr>
+        <td>Thuesday</td>
+        {% for i in nus_tue %}
+        <td>{{i.content}}</td>
+        {% endfor %}
+    </tr>
+    <tr>
+        <td>Wednesday</td>
+        {% for i in nus_wed %}
+        <td>{{i.content}}</td>
+        {% endfor %}
+    </tr>
+    <tr>
+        <td>Thrusday</td>
+        {% for i in nus_thu %}
+        <td>{{i.content}}</td>
+        {% endfor %}
+    </tr>
+    <tr>
+        <td>Friday</td>
+        {% for i in nus_fri %}
+        <td>{{i.content}}</td>
+        {% endfor %}
+    </tr>
+</table><hr><br>
+
+<h3>KG1</h3>
+<table class="table table-stippted table-bordered border-dark">
+    <tr>
+        <td></td>
+        {% for i in data %}
+        <td>{{i.time}}</td>
+        {% endfor %} 
+    </tr>
+    <tr>
+        <td>Monday</td>
+        
+        {% for i in kg1_mon %}
+        <td>{{i.content}}</td>
+        {% endfor %}
+            
+    </tr>
+    <tr>
+        <td>Thuesday</td>
+        {% for i in kg1_tue %}
+        <td>{{i.content}}</td>
+        {% endfor %}
+    </tr>
+    <tr>
+        <td>Wednesday</td>
+        {% for i in kg1_wed %}
+        <td>{{i.content}}</td>
+        {% endfor %}
+    </tr>
+    <tr>
+        <td>Thrusday</td>
+        {% for i in kg1_thu %}
+        <td>{{i.content}}</td>
+        {% endfor %}
+    </tr>
+    <tr>
+        <td>Friday</td>
+        {% for i in kg1_fri %}
+        <td>{{i.content}}</td>
+        {% endfor %}
+    </tr>
+</table><hr><br>
+
+<h3>KG2</h3>
+<table class="table table-stippted table-bordered border-dark">
+    <tr>
+        <td></td>
+        {% for i in data %}
+        <td>{{i.time}}</td>
+        {% endfor %} 
+    </tr>
+    <tr>
+        <td>Monday</td>
+        
+        {% for i in kg2_mon %}
+        <td>{{i.content}}</td>
+        {% endfor %}
+            
+    </tr>
+    <tr>
+        <td>Thuesday</td>
+        {% for i in kg2_tue %}
+        <td>{{i.content}}</td>
+        {% endfor %}
+    </tr>
+    <tr>
+        <td>Wednesday</td>
+        {% for i in kg2_wed %}
+        <td>{{i.content}}</td>
+        {% endfor %}
+    </tr>
+    <tr>
+        <td>Thrusday</td>
+        {% for i in kg2_thu %}
+        <td>{{i.content}}</td>
+        {% endfor %}
+    </tr>
+    <tr>
+        <td>Friday</td>
+        {% for i in kg2_fri %}
+        <td>{{i.content}}</td>
+        {% endfor %}
+    </tr>
+</table><hr><br>
+    
+{% endblock body %}
+
+
+    

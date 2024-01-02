@@ -1,0 +1,162 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Play School</title>
+  
+ 
+  <style>
+    
+
+    .contact {
+      border: 6px;
+      background-image: linear-gradient(to right, rgba(193, 209, 243, 0.877), rgba(152, 181, 204, 0.877), rgb(204, 207, 241));
+      text-align: center;
+      
+    }
+    .a{
+      background-color: rgb(228, 245, 216);
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      text-align: center;
+    }
+    .b{
+      background-color: rgb(255, 255, 255);
+      
+    }
+   
+    .centered {
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%,-50%);
+    }
+  
+    
+  </style>
+  
+  {% block style %}
+  
+  {% endblock style %}
+</head>
+
+
+{% block bg %}
+  <body>
+    
+{% endblock bg %}
+
+  
+
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" ></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" >
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <img src="{% static 'img/li.jpg' %}" width="20%" height="90px" >
+         
+          <li > 
+          
+            <a class="nav-link active" aria-current="page" href="{% url 'home' %}" style="color: rgb(255, 255, 255);">Home</a>
+          </li>
+          <li >
+            
+            {% block admin %}
+              
+            {% endblock admin %}
+              
+            <a class="nav-link" href="{% url 'about' %}" style="color: rgb(254, 255, 250);">About</a>
+          </li>
+          <li >
+            <a class="nav-link" href="{% url 'applyad' %}" style="color:  rgb(253, 253, 253);">Admission</a>
+          </li>
+          <li>
+            <a class="nav-link" href="{% url 'feestr' %}" style="color: rgb(254, 255, 250);">fee structure</a>
+          </li>
+          <li >
+            <a class="nav-link" href="{% url 'pgc' %}" style="color:  rgb(253, 253, 253);"> Course</a>
+        
+          </li>
+          <li >
+            <a class="nav-link" href="{% url 'ttpg' %}" style="color:  rgb(254, 255, 250);">Time Table<span class="sr-only"></span></a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: rgb(255, 255, 255);">
+           Parents
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+
+              <li><a class="dropdown-item" href="{% url 'feed' %}">Testimaonials</a></li>
+              <li><a class="dropdown-item" href="{% url 'do' %}">Do & Dont's</a></li>
+            </ul>
+          </li>  
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: rgb(254, 255, 248);">
+              Gallery
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+
+              <li><a class="dropdown-item" href="{% url 'img' %}">images</a></li>
+              <li><a class="dropdown-item" href="#">videos</a></li>
+            </ul>
+          </li>
+          <li >
+            <a class="nav-link" href="{% url 'contact' %}" style="color: rgb(255, 255, 255);">Contact us <span class="sr-only"></span></a>
+          </li>
+
+
+
+          
+         
+        </ul>
+        
+        
+      {% if request.session.uname %}
+      <p class="me-4 mt-2">Welcome {{request.session.uname}}</p>
+        <a href="logout"><button style="color: black;" class="btn btn-danger">Logout</button></a>
+        {% else %}
+        <a href="login"><button style="color: black;" class="btn btn-primary">LogIn</button></a>
+        {% endif %}
+        
+        
+      </div>
+    </div>
+
+   
+  </nav> 
+
+
+
+  {% block body %}
+
+  {% endblock body %}
+
+  <br><br>
+  <div class="contact">
+    <h1>Contact Us:</h1>
+    <p style="color: rgb(0, 0, 7);" >89,MADHAV CLUB ROAD FREEGANJ,UJJAIN</p>
+    <p>Tel:0734-2551785</p>
+    <h4>Time:9 am to 12pm & 1 to 4 pm</h4>
+    
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+   
+</body>
+
+</html>

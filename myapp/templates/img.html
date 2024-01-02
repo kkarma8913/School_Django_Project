@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block body %}
+
+{% for i in obj %}
+      <img src="{{i.student_images.url}}" alt="" height="200" width="247">
+    
+{% endfor %}
+
+
+{% endblock body %}

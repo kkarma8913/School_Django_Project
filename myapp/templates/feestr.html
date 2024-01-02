@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block body %}
+
+
+    <h2>Little Gems Play School,Ujjain</h2>
+      <h3>FEE STRUCTURE - 2023-24</h3>
+   
+
+    {% for i in data %}
+    <table style="border: 2px solid black;">
+      <tr>
+        <th></th>
+        <th>Amount</th>
+      </tr>
+      <td>Admission Forms</td>
+      <td>{{i.admission_form}}</td>
+      </tr>
+      <tr>
+        <td>Admission fee</td>
+        <td>{{i.admission_fees}}</td>
+
+      </tr>
+      <tr> 
+
+        <td>Caution money </td>
+        <td>{{i.caution_money }}</td>
+
+
+      </tr>
+      <tr>
+
+        <td>Identity Card</td>
+        <td>{{i.id_card}}</td>
+
+      </tr>
+
+      <tr>
+
+        <td>Transport</td>
+        <td>{{i.transport}}</td>
+
+      </tr>
+
+ 
+    </table>
+    {% endfor %}
+    <br>
+
+      
+
+        
+    <table style="border: 1px solid black;">
+
+      <tr>
+        <th>CLASS</th>
+        <th>I Inst.at the time of Admission</th>
+        <th>II In first week of March</th>
+        <th>III In first week ofJuly</th>
+        <th>IV In first week of September</th>
+        <th>Total Annual Fee In Rs.</th>
+
+      </tr>
+      {% for j in data1 %}
+      
+      
+      <tr> 
+        <td >{{j.group}}</td>
+        <td >{{j.inst1}}</td>
+        <td >{{j.inst2}}</td>
+        <td >{{j.inst3}}</td>
+        <td >{{j.inst4}}</td>
+        <td>{{j.total}}</td>
+      
+      </tr>
+     
+      {% endfor %}
+    </table>
+    
+
+
+
+    <table style="border: 1px solid black;">
+
+      <tr>
+        <th colspan="6">*For Newly Admitted Students there will be one time fee(600/-) </th>
+
+
+
+      </tr>
+
+
+    </table>
+
+    {% endblock body %}

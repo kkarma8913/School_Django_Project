@@ -1,0 +1,198 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block style %}
+<style>
+   
+
+  
+
+
+
+   
+   
+   
+   .txt {
+        color: rgb(0, 0, 0);
+    }
+
+    .heading {
+        color: black;
+        font-family: "Lucida Console", "Courier New", monospace;
+        font-size: 20px;
+        font-weight: bolder;
+        text-align: center;
+        background-image: linear-gradient(to right, rgb(255, 240, 240), rgb(191, 228, 191), rgb(245, 232, 232), rgb(186, 216, 211));
+
+    }
+    .fimg{
+        text-align: center;
+    }
+
+    
+
+    
+</style>
+
+
+{% endblock style %}
+
+
+{% block admin %}
+
+{% if request.user.is_superuser %}
+    
+<li >
+    <a class="nav-link" href="admin" style="color: rgb(255, 255, 255);">Admin</a>
+  </li>
+  {% endif %}
+{% endblock admin %}
+    
+{% block body %}
+
+<div >
+    <div class="heading">
+        LITTLE GEMS PLAY SCHOOL
+    </div>
+    <div class="text-center">
+     <img  src="{% static 'img/ss.jpg' %}" alt="img" height="400px" width="1000px" ></img>
+    </div>
+ 
+</div>
+<h3 class="heading">PLAY LEARN AND GROW TOGETHER</h3>
+
+
+<section class="OurPrograms">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="Program Program1 aos-init aos-animate" data-aos="fade-up">
+                    <div class="img"> <br><br><br>
+
+                        <img src="{% static 'img/PG C.jpg' %}" alt="playgroup" width="100%">
+                    </div>
+                    <div style="background-color: rgb(236, 180, 180);">
+                        <h3 class="txt">Play Group</h3>
+                        <p>Children start to explore the world around them as soon as they are born.</p>
+                        <div >
+                            <div>
+                                <strong>Age Group</strong>
+                                <span>1.5 - 2.5 Years</span>
+                            </div>
+                            <div>
+                                <strong>Duration</strong>
+                                <span>2.5 hours/day</span>
+                            </div>
+                        </div> 
+            
+                        <div class="text-center" >
+                            <a href="{% url 'pgc' %}"  >
+                                Read more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div><br>
+
+
+
+            <div class="col-lg-5">
+                <br>
+                <div class="Program Program2 aos-init aos-animate" data-aos="fade-up" data-aos-delay="20">
+                    <div class="img"><br><br>
+                        <img src="{% static 'img/LKG.jpg' %}" alt="playschools" width="100%" height="210px">
+                    </div>
+                    <div style="background-color: rgb(162, 212, 181);">
+                        <h3 class="txt">Nursery</h3>
+                        <p>Quality education in the early years of preschool sets a firm foundation in the
+                            overall development of a child.</p>
+                        <div >
+                            <div>
+                                <strong>Age Group</strong>
+                                <span>2.5 - 3.5 Years</span>
+                            </div>
+                            <div>
+                                <strong>Duration</strong>
+                                <span>2.5 hours/day</span>
+                            </div>
+                        </div>
+                        <div  class="text-center">
+                            <a href="{% url 'nco' %}">
+                                Read more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-lg-5">
+                <div class="Program Program3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="30">
+                    <div class="img"><br><br>
+                        <img src="{% static 'img/NU.jpg'%} " alt="playschools for children" width="100%">
+                    </div>
+                    <div style="background-color: rgb(162, 212, 181);">
+                        <h3 class="txt">K.G.I</h3>
+                        <p sty>The transition from preschool to primary school is a crucial time of change for both
+                            children as well as their parents.</p>
+                        <div >
+                            <div>
+                                <strong>Age Group</strong>
+                                <span>3.5 - 4.5 Years</span>
+                            </div>
+                            <div>
+                                <strong>Duration</strong>
+                                <span>3.5 hours/day</span>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <a href="{% url 'kg1' %}">
+                                Read more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div> <br>
+
+
+
+
+            <div class="col-lg-5">
+                <br>
+                <div class="Program Program3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="30">
+                    <div class="img"><br>
+                        <img src="{% static 'img/UKG.jpg' %}" alt="playschools for children" width="100%"
+                            height="280px">
+                    </div>
+                    <div style="background-color: rgb(236, 180, 180);">
+                        <h3 class="txt">K.G.II</h3>
+                        <p>The transition from preschool to primary school is a crucial time of change for both
+                            children as well as their parents.</p>
+                        <div>
+                            <div>
+                                <strong>Age Group</strong>
+                                <span>4.5 - 5.5 Years</span>
+                            </div>
+                            <div>
+                                <strong>Duration</strong>
+                                <span>3.5 hours/day</span>
+                            </div>
+                        </div>
+                        <div class="text-center" >
+                            <a href="{% url 'kg2' %}">
+                                Read more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{% endblock body %}

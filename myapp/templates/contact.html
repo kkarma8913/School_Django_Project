@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block bg %} 
+
+<body style="background-color: rgba(248, 235, 235, 0.863);">
+   
+   
+
+   {% endblock bg %}
+
+   {% block body %}
+   <div class="text-center">
+      <img src="{% static 'img/conn.jpg' %}" alt="img" height="250" width="900"><br><br> 
+    </div>
+
+    
+    <div class="container">
+     <div class="row my-3">
+      <div class="col-sm-6 offset-sm-3">
+       <h3>Contact us </h3>
+       <hr>
+       <form action="" method="post" class="shadow p-5">
+        {% if messages %}
+        {% for message in messages %}
+         <p {% if message.tags %} class="alert alert-{{message.tags}} mb-5" {% endif %}>{{message}}</p>
+        {% endfor %}
+        {% endif %}
+         {% csrf_token %}
+         {% for fm in form %}
+          <div class="form-group mb-3">
+          {{fm.label_tag}} {{fm}} <small class="text-danger">{{fm.errors|striptags}}</small>
+          </div>
+         {% endfor %}
+         <input type="submit" value="Submit" class="btn btn-primary">
+         <br>
+         <div class="text-center text-primary fw-bold"><small>Existing User ? <a href="" class="text-danger">Login Now</a> </small></div>
+         {% if form.non_field_errors %}
+          {% for error in form.non_field_errors %}
+           <p class="alert alert-danger my-3">{{error}}</p>
+          {% endfor %}
+         {% endif %}
+        </form>
+      </div>
+     </div>
+    </div>
+  
+
+
+
+
+         <div class="map">
+            <!-- Google Map Copied Code -->
+            <div style="text-align:center;">
+            <iframe  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1833.8849203750435!2d75.78764836441805!3d23.17859893141527!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3963746a6fbdeda9%3A0x96d9adfd3cad528a!2sLittle%20Gems%20Play%20School!5e0!3m2!1sen!2sus!4v1677479805889!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    width=100%;
+         
+                    height="300"
+                    frameborder="0"
+                    style="border:0;"
+                    allowfullscreen=""
+                    aria-hidden="false"
+                    tabindex="0"
+            </iframe>
+         </div>
+        </div>
+      </div>
+   </div>
+ 
+   
+
+
+      
+  
+   {% endblock body %}

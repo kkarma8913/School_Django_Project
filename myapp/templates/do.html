@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block body %}
+
+
+<div class="do">
+<img src="{% static 'img/do.jpg' %}" alt="img" height="190" width="70%" >
+</div>
+
+<h1 class="do"> What do and dont's Child Development</h1>
+
+<head>
+    <style>
+      
+
+        .do {
+            text-align: center;
+
+            text-shadow: 2px 2px 5px  rgb(41, 1, 1);
+
+        }
+       
+        .tab{
+           color: rgb(0, 0, 0);
+           background-color: rgb(208, 216, 233);
+           text-align: center;
+
+          
+           border:dotted;
+            width: 100%;
+           
+            padding: 20px;
+
+           
+        }
+    </style>
+
+</head>
+<table class="tab">
+    <tr>
+        <th>Do</th>
+        <th>Dont's</th>
+ 
+
+    </tr>
+    <tr>
+        <td>love ad care</td>
+        <td>Do not pressurize</td>
+
+
+    </tr>
+    <tr>
+        <td>Appriciate your child for small things</td>
+        <td>no imposing</td>
+
+
+
+    </tr>
+    <tr>
+        <td>Right way of doing things</td>
+        <td>do not compare</td>
+
+    </tr>
+    <tr>
+        <td>Encourage Discussion</td>
+        <td>no house hold cribbing</td>
+    </tr>
+</table>
+
+{% endblock body %}
